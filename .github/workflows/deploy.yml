@@ -12,20 +12,20 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Copy index.html to EC2
+    - name: Copy frontend to EC2
       uses: appleboy/scp-action@v0.1.4
       with:
         host: 3.27.221.101
         username: ec2-user
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-        source: "frontend/index.html"
-        target: "/usr/share/nginx/html"
+        source: "index.html"
+        target: "/var/www/frontend"
 
     - name: Restart Nginx
       uses: appleboy/ssh-action@v0.1.10
       with:
         host: 3.27.221.101
-        username: ec2-user
+        username: c2-user
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           sudo systemctl restart nginx
