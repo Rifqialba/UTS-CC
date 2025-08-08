@@ -109,12 +109,7 @@ jobs:
 
 ## 📸 Gambar Konfigurasi
 
-### 🔹 VPC dan Subnet
-![VPC](/Screenshot 2025-08-08 at 19.18.48.png)
 
-
-### 🔹 Security Group
-![Security Group](https://github.com/user-attachments/assets/bfae4fc3-caf9-40b8-ad7f-d717ba3b1120)
 
 
 
