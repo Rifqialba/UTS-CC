@@ -105,9 +105,11 @@ jobs:
         username: ec2-user
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          sudo systemctl restart nginx
+          sudo systemctl restart nginx 
+```
 
-## 📸 Gambar Konfigurasi lihat pada bagian issue
+# 📸 Gambar Konfigurasi dan website dapat dilihat pada bagian issue
+
 
 
 
