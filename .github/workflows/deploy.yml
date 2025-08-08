@@ -16,6 +16,7 @@ jobs:
       run: |
         echo -e "${{ secrets.SSH_PRIVATE_KEY }}" > key.pem
         chmod 600 key.pem
+        chmod 700 /root/.ssh
         ssh -i key.pem -o StrictHostKeyChecking=no ec2-user@3.27.221.101 "echo Connected successfully!"
 
     - name: Copy frontend to EC2
