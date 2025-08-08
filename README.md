@@ -110,17 +110,11 @@ jobs:
 
 ---📸 Gambar Konfigurasi---
 
-### 🔹 VPC dan Subnet
-![VPC Subnet](https://github.com/user-attachments/assets/a03e954b-9c46-4c67-83d7-cbc0928e6689)
+<h3>🔹 VPC dan Subnet</h3>
+<img src="https://github.com/user-attachments/assets/a03e954b-9c46-4c67-83d7-cbc0928e6689" width="600" />
 
-### 🔹 Security Group
-![Security Group](https://github.com/user-attachments/assets/bfae4fc3-caf9-40b8-ad7f-d717ba3b1120)
-
-### 🔹 Output GitHub Actions
-![GitHub Actions Output](https://github.com/user-attachments/assets/d6fb3926-7029-4acd-8bc8-c558f1303688)
-
-### 🔹 Struktur Arsitektur
-![Diagram Infrastruktur](https://github.com/user-attachments/assets/ce9bad46-17d2-488b-8154-867a9f1ae20b)
+<h3>🔹 Security Group</h3>
+<img src="https://github.com/user-attachments/assets/bfae4fc3-caf9-40b8-ad7f-d717ba3b1120" width="600" />
 
 
 
