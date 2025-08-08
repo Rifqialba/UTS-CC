@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Produk Kesehatan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8fb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2d89ef;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .produk-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 20px;
+    }
+
+    .produk-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .produk-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .produk-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    .produk-card h3 {
+      margin: 10px 0 5px;
+      color: #2d89ef;
+    }
+
+    .produk-card p {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .error {
+      color: red;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Daftar Produk Kesehatan</h1>
+  </header>
+
+  <div id="produk-container" class="produk-container"></div>
+  <div id="error-message" class="error"></div>
+<script>
+  fetch('/produk')
+    .then(response => {
+      if (!response.ok) throw new Error("Gagal memuat data dari server");
+      return response.json();
+    })
+    .then(data => {
+      const container = document.getElementById('produk-container');
+      data.forEach(produk => {
+        const div = document.createElement('div');
+        div.className = "produk-card";
+        div.innerHTML = `
+          <img src="${produk.gambar_url}" alt="${produk.nama}" />
+          <h3>${produk.nama}</h3>
+          <p>Harga: Rp${produk.harga.toLocaleString('id-ID')}</p>
+        `;
+        container.appendChild(div);
+      });
+    })
+    .catch(error => {
+      console.error('Gagal mengambil data:', error);
+      document.getElementById('error-message').innerText = 'Gagal mengambil data';
+    });
+</script>
+
+</body>
+</html>
