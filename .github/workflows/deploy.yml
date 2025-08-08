@@ -12,6 +12,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Debug SSH connection
+      run: |
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > key.pem
+        chmod 600 key.pem
+        ssh -i key.pem -o StrictHostKeyChecking=no ec2-user@3.27.221.101 "echo Connected successfully!"
+
     - name: Copy frontend to EC2
       uses: appleboy/scp-action@v0.1.4
       with:
