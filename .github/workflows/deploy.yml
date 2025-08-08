@@ -18,14 +18,14 @@ jobs:
         host: 3.27.221.101
         username: ec2-user
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-        source: "index.html"
+        source: "frontend/index.html"
         target: "/var/www/frontend"
 
     - name: Restart Nginx
       uses: appleboy/ssh-action@v0.1.10
       with:
         host: 3.27.221.101
-        username: c2-user
+        username: ec2-user
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           sudo systemctl restart nginx
