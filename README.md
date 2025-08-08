@@ -110,7 +110,7 @@ jobs:
 ## 📸 Gambar Konfigurasi
 
 ### 🔹 VPC dan Subnet
-![VPC](Screenshot 2025-08-08 at 19.18.48.png)
+![VPC](/Screenshot 2025-08-08 at 19.18.48.png)
 
 
 ### 🔹 Security Group
