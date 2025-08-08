@@ -6,14 +6,14 @@ Website ini menampilkan daftar produk kesehatan dengan gambar dan harga, menggun
 
 ## 📑 Daftar Isi
 
-- [📖 Deskripsi Proyek](#deskripsi-proyek)
-- [⚙️ Arsitektur & Infrastruktur](#arsitektur--infrastruktur)
-- [🚀 Alur Kerja Aplikasi](#alur-kerja-aplikasi)
-- [🔧 Teknologi yang Digunakan](#teknologi-yang-digunakan)
-- [⚡ CI/CD dengan GitHub Actions](#cicd-dengan-github-actions)
-- [📸 Gambar Konfigurasi](#gambar-konfigurasi)
-- [📁 Struktur Direktori](#struktur-direktori)
-- [📝 Penutup](#penutup)
+- [📖 Deskripsi Proyek](#-deskripsi-proyek)
+- [⚙️ Arsitektur & Infrastruktur](#-arsitektur--infrastruktur)
+- [🚀 Alur Kerja Aplikasi](#-alur-kerja-aplikasi)
+- [🔧 Teknologi yang Digunakan](#-teknologi-yang-digunakan)
+- [⚡ CI/CD dengan GitHub Actions](#-cicd-dengan-github-actions)
+- [📸 Gambar Konfigurasi](#-gambar-konfigurasi)
+- [📁 Struktur Direktori](#-struktur-direktori)
+- [📝 Penutup](#-penutup)
 
 ---
 
