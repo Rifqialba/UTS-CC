@@ -107,14 +107,14 @@ jobs:
         script: |
           sudo systemctl restart nginx
 
+## 📸 Gambar Konfigurasi
 
----📸 Gambar Konfigurasi---
+### 🔹 VPC dan Subnet
+![VPC dan Subnet](https://github.com/user-attachments/assets/a03e954b-9c46-4c67-83d7-cbc0928e6689)
 
-<h3>🔹 VPC dan Subnet</h3>
-<img src="https://github.com/user-attachments/assets/a03e954b-9c46-4c67-83d7-cbc0928e6689" width="600" />
+### 🔹 Security Group
+![Security Group](https://github.com/user-attachments/assets/bfae4fc3-caf9-40b8-ad7f-d717ba3b1120)
 
-<h3>🔹 Security Group</h3>
-<img src="https://github.com/user-attachments/assets/bfae4fc3-caf9-40b8-ad7f-d717ba3b1120" width="600" />
 
 
 
