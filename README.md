@@ -109,15 +109,19 @@ jobs:
 
 
 ---📸 Gambar Konfigurasi---
-<img width="540" height="513" alt="Screenshot 2025-08-08 at 19 19 30" src="https://github.com/user-attachments/assets/a03e954b-9c46-4c67-83d7-cbc0928e6689" />
-<img width="540" height="517" alt="Screenshot 2025-08-08 at 19 18 48" src="https://github.com/user-attachments/assets/bfae4fc3-caf9-40b8-ad7f-d717ba3b1120" />
-<img width="818" height="84" alt="Screenshot 2025-08-08 at 19 24 04" src="https://github.com/user-attachments/assets/d6fb3926-7029-4acd-8bc8-c558f1303688" />
-<img width="815" height="150" alt="Screenshot 2025-08-08 at 19 23 44" src="https://github.com/user-attachments/assets/624c3a1f-2714-48ab-905f-bb1272f2895b" />
-<img width="814" height="391" alt="Screenshot 2025-08-08 at 19 23 06" src="https://github.com/user-attachments/assets/02898517-4039-4960-8866-fd7146ee425a" />
-<img width="818" height="388" alt="Screenshot 2025-08-08 at 19 22 41" src="https://github.com/user-attachments/assets/8c0e678b-d3bf-4aa4-a168-5c9013dcaaeb" />
-<img width="818" height="362" alt="Screenshot 2025-08-08 at 19 22 24" src="https://github.com/user-attachments/assets/1dd43d03-d597-46a1-b22e-68084e3bcc88" />
-<img width="1205" height="654" alt="Screenshot 2025-08-07 at 18 30 19" src="https://github.com/user-attachments/assets/ce9bad46-17d2-488b-8154-867a9f1ae20b" />
-ps://github.com/user-attachments/assets/528f9ba1-7962-427a-b410-28dc482225e4" />
+
+### 🔹 VPC dan Subnet
+![VPC Subnet](https://github.com/user-attachments/assets/a03e954b-9c46-4c67-83d7-cbc0928e6689)
+
+### 🔹 Security Group
+![Security Group](https://github.com/user-attachments/assets/bfae4fc3-caf9-40b8-ad7f-d717ba3b1120)
+
+### 🔹 Output GitHub Actions
+![GitHub Actions Output](https://github.com/user-attachments/assets/d6fb3926-7029-4acd-8bc8-c558f1303688)
+
+### 🔹 Struktur Arsitektur
+![Diagram Infrastruktur](https://github.com/user-attachments/assets/ce9bad46-17d2-488b-8154-867a9f1ae20b)
+
 
 
 📝 Penutup
