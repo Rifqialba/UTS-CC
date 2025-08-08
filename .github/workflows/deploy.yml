@@ -1,22 +1,31 @@
-name: Deploy Frontend
+name: Deploy Frontend to EC2
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Copy files to EC2 via SCP
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ec2-user
-          key: ${{ secrets.EC2_SSH_KEY }}
-          source: "./"
-          target: "/home/ec2-user/frontend"
+    - name: Copy frontend to EC2
+      uses: appleboy/scp-action@v0.1.4
+      with:
+        host: 3.25.174.62
+        username: ubuntu
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        source: "index.html"
+        target: "/var/www/frontend"
+
+    - name: Restart Nginx
+      uses: appleboy/ssh-action@v0.1.10
+      with:
+        host: 3.25.174.62
+        username: ubuntu
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          sudo systemctl restart nginx
