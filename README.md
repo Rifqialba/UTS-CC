@@ -107,7 +107,7 @@ jobs:
         script: |
           sudo systemctl restart nginx
 
-## 📸 Gambar Konfigurasi
+## 📸 Gambar Konfigurasi lihat pada bagian issue
 
 
 
