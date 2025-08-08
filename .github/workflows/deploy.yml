@@ -15,17 +15,17 @@ jobs:
     - name: Copy frontend to EC2
       uses: appleboy/scp-action@v0.1.4
       with:
-        host: 3.25.174.62
-        username: ubuntu
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-        source: "index.html"
+        source: "frontend/*"
         target: "/var/www/frontend"
 
     - name: Restart Nginx
       uses: appleboy/ssh-action@v0.1.10
       with:
-        host: 3.25.174.62
-        username: ubuntu
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           sudo systemctl restart nginx
